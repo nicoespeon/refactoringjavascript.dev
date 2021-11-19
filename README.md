@@ -1,2 +1,3 @@
-# refactoringjavascript.dev
-Host of my Refactoring JavaScript course
+# Refactoring JavaScript
+
+Never ask for permission to refactor again!
