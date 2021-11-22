@@ -30,7 +30,7 @@ export const ComingSoon = () => (
           <div className="mt-4 text-center md:text-left">
             <p className="mt-4 text-mobile-paragraph md:text-desktop-paragraph text-slate-headline">
               I'm currently building up this course. I estimate the launch date
-              will happen <strong>early 2022</strong>.
+              will happen <strong>in early 2022</strong>.
             </p>
             <p>
               Want to follow the course's development? You can sign up for email

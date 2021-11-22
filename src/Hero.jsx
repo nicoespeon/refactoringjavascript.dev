@@ -25,8 +25,9 @@ export function Hero() {
             <div className="mt-[50px] md:mt-20 m-auto">
               <div className="max-w-[910px] m-auto text-center">
                 <h1 className="font-medium text-slate-headline text-mobile-h1 md:text-desktop-h1">
-                  Clean up your JavaScript application as you go, stop at any
-                  time.
+                  Clean up JavaScript applications
+                  <br />
+                  as you go, stop at any time.
                 </h1>
                 <p className="mt-[30px] text-desktop-subheading">
                   Your guided path to powerful coding habits.
@@ -46,18 +47,17 @@ export function Hero() {
               </div>
               <div className="max-w-[790px] mt-[56px] md:mt-20 m-auto">
                 <h2 className="font-medium text-slate-headline text-mobile-h3 md:text-desktop-h3">
-                  Why would risk refactoring your JavaScript codebase?
+                  Would you risk refactoring your JavaScript codebase?
                 </h2>
                 <p className="mt-[28px] md:mt-10">
-                  Deep down you it: you don't <em>fully</em> understand what
-                  this code is doing.
+                  Deep down you know it: you don't <em>really</em> understand
+                  what this code is doing.
                 </p>
                 <p>
-                  It has been written by other developers, some don't even work
-                  there anymore. Those who are left can't remember what{" "}
-                  <em>this part</em> was supposed to do.
+                  Other developers wrote that. Some don't work here anymore. The
+                  rest can't remember what <em>this part</em> was supposed to
+                  do, sorry! 🤷‍♂️ You are facing the beast and it's a scary one:
                 </p>
-                <p>Now you are facing the beast and it's a scary one:</p>
               </div>
               <div className="relative mt-[56px] md:mt-20 flex items-center justify-center h-[194px] md:h-[680px] bg-white bg-opacity-70 rounded-3xl">
                 <img
@@ -72,17 +72,21 @@ export function Hero() {
                   Nesting, weird names, indirections, side-effects everywhere…
                   It's a nightmare to work with!
                 </p>
-                <p>You don't want to touch this code with a ten feet pole.</p>
+                <p>
+                  You don't want to touch this code with a ten feet pole. 🤮
+                </p>
                 <p>
                   But you <strong>have to</strong> touch this code!
                 </p>
-                <p>You are the one who is paid to fix bugs in this mess.</p>
+                <p>
+                  You are the one who is paid to fix bugs in this mess, right.
+                  Right?? 😬
+                </p>
                 <p>
                   Your boss expects you to add new ✨ shiny features ✨ on top
                   of this swamp by the end of next week. These have already been
-                  sold to the customers you know, just make it happen.
+                  sold to the customers, you know. Just make it happen.
                 </p>
-                <p>Sorry!</p>
               </div>
             </div>
           </section>
