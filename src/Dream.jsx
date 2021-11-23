@@ -1,6 +1,6 @@
 export function Dream() {
   return (
-    <div className="max-w-[790px] mt-[56px] md:mt-20 m-auto pb-20">
+    <div className="px-6 md:px-0 max-w-[790px] mt-[56px] md:mt-20 m-auto pb-20">
       <h2 className="font-medium text-mobile-h2 lg:text-desktop-h2 font-ibm-sans tracking-tight text-slate-headline">
         Never ask for permission to refactor again!
       </h2>
@@ -22,8 +22,8 @@ export function Dream() {
         </ol>
       </div>
 
-      <div className="max-w-default md:justify-center md:flex md:items-center md:m-auto pt-12">
-        <div className="w-1/2 md:flex md:items-center md:justify-center">
+      <div className="max-w-default md:justify-center md:flex md:items-center md:m-auto md:pt-12">
+        <div className="w-full md:w-1/2 md:flex md:items-center md:justify-center">
           <div>
             <p className="mt-6 text-xl leading-9 antialiased font-normal">
               Refactoring code is what you do <u>while shipping changes</u>.
@@ -41,11 +41,11 @@ export function Dream() {
           <img
             src="/assets/jenga/3-success-2.gif"
             alt=""
-            className="relative"
-            style={{ zIndex: 2 }}
+            className="relative border-4 md:border-0 m-auto md:m-0"
+            style={{ zIndex: 2, borderColor: "rgb(255, 0, 115)" }}
           />
           <div
-            className="absolute w-full h-full"
+            className="absolute w-full h-full hidden md:block"
             style={{
               top: -15,
               left: 15,
@@ -87,11 +87,11 @@ export function Dream() {
           <img
             src="/assets/jenga/3-success.gif"
             alt=""
-            className="relative"
-            style={{ zIndex: 2 }}
+            className="relative border-4 md:border-0 m-auto md:m-0"
+            style={{ zIndex: 2, borderColor: "rgb(255, 0, 115)" }}
           />
           <div
-            className="absolute w-full h-full"
+            className="absolute w-full h-full hidden md:block"
             style={{
               top: 15,
               left: -15,

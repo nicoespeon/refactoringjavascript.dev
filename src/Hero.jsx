@@ -95,12 +95,12 @@ export function Hero() {
                   type="email"
                   value={email}
                   onChange={(event) => setEmail(event.target.value.trim())}
-                  className="py-4 pl-6 bg-white border-2 rounded-lg text-slate-body placeholder-slate-body text-desktop-paragraph placeholder-opacity-30 border-slate-border min-w-[350px]"
+                  className="py-4 pl-6 bg-white border-2 rounded-lg text-slate-body placeholder-slate-body text-desktop-paragraph placeholder-opacity-30 border-slate-border min-w-[350px] md:w-auto w-full"
                   placeholder="Email"
                 />
               </div>
               <button
-                className="w-full px-8 py-4 mt-4 text-white rounded-lg md:mt-0 filter hover:brightness-125 text-desktop-paragraph md:w-auto flex items-center"
+                className="w-full px-8 py-4 mt-4 text-white rounded-lg md:mt-0 filter hover:brightness-125 text-desktop-paragraph md:w-auto flex items-center justify-center md:justify-start"
                 style={{
                   backgroundColor: "rgb(255, 0, 115)",
                 }}

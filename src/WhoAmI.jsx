@@ -1,13 +1,14 @@
 export function WhoAmI() {
   return (
-    <div className="max-w-[910px] mt-[56px] md:mt-20 m-auto ">
-      <div className="flex">
+    <div className="px-6 md:px-0 max-w-[910px] mt-[56px] md:mt-20 m-auto ">
+      <div className="md:flex">
         <div>
           <img
             src="/assets/profile.jpg"
             alt="Nicolas Carlo"
             width="400"
             height="400"
+            className="m-auto md:m-0"
             style={{
               borderRadius: "65% 40% 40% 25%",
               borderStyle: "outset",
@@ -16,7 +17,7 @@ export function WhoAmI() {
             }}
           />
         </div>
-        <div className="w-4/5 pl-12">
+        <div className="w-full md:w-4/5 md:pl-12">
           <p className="mt-6 text-xl leading-9 antialiased font-normal">
             Hey, I'm{" "}
             <a
@@ -68,8 +69,8 @@ export function WhoAmI() {
           That's why, with this course, I teach what I learned in a way so you
           can <strong>quickly get concrete results</strong> 🏃
         </p>
-        <div className="flex justify-end">
-          <img src="/assets/signature.png" alt="Nicolas" width="400" />
+        <div className="flex justify-end mb-12 mt-6">
+          <img src="/assets/signature.png" alt="Nicolas" width="250" />
         </div>
       </div>
     </div>

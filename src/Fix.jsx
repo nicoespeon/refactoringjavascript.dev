@@ -1,9 +1,9 @@
 export function Fix() {
   return (
-    <div className="bg-slate-light py-20">
+    <div className="bg-slate-light py-20 px-6 md:px-0">
       <div className="max-w-[790px] m-auto">
         <h2 className="font-medium text-mobile-h2 lg:text-desktop-h2 font-ibm-sans tracking-tight text-slate-headline">
-          Refactorings + Atomic Habits = 🚀
+          Refactorings + Atomic Habits = 🚀
         </h2>
         <h3 className="font-light text-slate-headline mt-[40px] antialiased text-mobile-h3 lg:text-desktop-h3 tracking-wide">
           A proven way to make changes easier.
