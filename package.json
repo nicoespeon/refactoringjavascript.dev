@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/nicoespeon/refactoringjavascript.dev/issues"
   },
-  "homepage": "https://github.com/nicoespeon/refactoringjavascript.dev#readme",
+  "homepage": "https://refactoringjavascript.dev",
   "engines": {
     "node": ">= 14 < 17"
   },
