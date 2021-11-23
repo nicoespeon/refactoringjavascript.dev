@@ -20,6 +20,7 @@ module.exports = {
         grab: "grabbing",
       },
       fontFamily: {
+        "ibm-sans": ["IBM Plex Sans", "sans-serif"],
         "dm-sans": ["DMSans", "sans-serif"],
       },
       colors: {

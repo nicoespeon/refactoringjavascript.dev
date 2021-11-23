@@ -94,7 +94,7 @@ export function FAQ() {
             <a
               href="https://testingjavascript.com/"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               Testing JavaScript
             </a>{" "}

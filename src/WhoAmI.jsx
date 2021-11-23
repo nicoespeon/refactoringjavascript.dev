@@ -1,56 +1,76 @@
 export function WhoAmI() {
   return (
-    <div>
-      <img src="/assets/profile.jpg" alt="Nicolas Carlo" />
-      <div>
-        <p>
-          Hey, I'm{" "}
-          <a
-            href="https://twitter.com/nicoespeon"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Nicolas Carlo
-          </a>
-           
-          <span role="img" aria-label="Waving hand">
-            👋
-          </span>
-        </p>
-        <p>
-          I started my career on the front-end side, building jQuery plugins and
-          UIs. I progressively included back-end JavaScript when Node.js became
-          a thing. I've then been a freelancer, consultant, and Tech Lead across
-          different projects. I pushed different styles of code to production,
-          from Backbone.js to Angular, going by Cycle.js… These past 4 years
-          have mostly been React. 😃
-        </p>
-        <p>
-          I was a huge Webstorm user but moved to VS Code because I prefer how
+    <div className="max-w-[910px] mt-[56px] md:mt-20 m-auto ">
+      <div className="flex">
+        <div>
+          <img
+            src="/assets/profile.jpg"
+            alt="Nicolas Carlo"
+            width="400"
+            height="400"
+            style={{
+              borderRadius: "65% 40% 40% 25%",
+              borderStyle: "outset",
+              borderWidth: 6,
+              borderColor: "rgb(255, 0, 115)",
+            }}
+          />
+        </div>
+        <div className="w-4/5 pl-12">
+          <p className="mt-6 text-xl leading-9 antialiased font-normal">
+            Hey, I'm{" "}
+            <a
+              href="https://twitter.com/nicoespeon"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Nicolas Carlo
+            </a>
+             
+            <span role="img" aria-label="Waving hand">
+              👋
+            </span>
+          </p>
+          <p className="mt-6 text-xl leading-9 antialiased font-normal">
+            I started my career on the front-end, building jQuery plugins and
+            UIs. I progressively included back-end when Node.js became a thing.
+            I've been a freelancer, consultant, and Tech Lead on different
+            projects. I pushed many styles of SPA to production, from
+            Backbone.js to Angular, passing by Cycle.js… These past 4 years have
+            mostly been React. 😃
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full">
+        <p className="mt-6 text-xl leading-9 antialiased font-normal">
+          I was a big Webstorm user but I moved to VS Code because I prefer how
           versatile it is.
         </p>
-        <p>
-          I have to deal with so many legacy JS code that I started building my
-          own{" "}
+        <p className="mt-6 text-xl leading-9 antialiased font-normal">
+          I've had to deal with so many legacy JS code that I started building
+          my own{" "}
           <a
             href="https://marketplace.visualstudio.com/items?itemName=nicoespeon.abracadabra"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             VS Code extension for automated refactorings
-          </a>{" "}
-          , open-source!
+          </a>
+          ! It's all open-source.
         </p>
-        <p>
-          I like when things are practical. I do my best to give tricks you can
-          use, and tips that can help. I think practice makes perfect. Do early,
-          do often, iterate from the feedback!
+        <p className="mt-6 text-xl leading-9 antialiased font-normal">
+          I like when things are <u>practical</u>. I do my best to give tricks
+          you can use, and tips that can help. I think practice makes perfect.
+          Do early, do often, iterate from the feedback!
         </p>
-        <p>
-          That's why, with this course, I wish to teach you what I learned in
-          the best possible way, so you can quickly get concrete results. 🏃
+        <p className="mt-6 text-xl leading-9 antialiased font-normal">
+          That's why, with this course, I teach what I learned in a way so you
+          can <strong>quickly get concrete results</strong> 🏃
         </p>
-        <img src="/assets/signature.png" alt="Nicolas" />
+        <div className="flex justify-end">
+          <img src="/assets/signature.png" alt="Nicolas" width="400" />
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,124 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.quote {
+  position: relative;
+  font-style: italic;
+}
+
+.quote::before {
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: -60px;
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: block;
+  opacity: 0.75;
+  background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z' fill='white' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 600px) {
+  ol {
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+ul > li {
+  position: relative;
+  padding-left: 2rem;
+  list-style-type: none;
+  padding-bottom: 1rem;
+}
+
+ul.check > li::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiNDNkY2RDUiLz4KICAgIDxwYXRoIGZpbGw9IiMzOEExNjkiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEuNzA0NDU1NDUsNC41ODg5MTA4OSBMMy42MDczMjY3Myw2Ljc4OTIwNzkyIEw5LjE2NzMyNjczLDAuMTg4NDE1ODQyIEM5LjU4MzQ3NTI1LC0wLjI1NzUxNDg1MSAxMC4yMzc4MjE4LDAuMjE4MTk2MDQgOS45MTA2NzMyNywwLjcyMzY4MzE2OCBMNC40Mzk5ODAyLDkuMDc4NDM1NjQgQzQuMDIzODMxNjgsOS42MTM3MDI5NyAzLjQ1ODc3MjI4LDkuNjczMjY3MzMgMi45ODMwNDk1LDkuMTM3OTk2MDQgTDAuMjE3NzAyOTcsNS44Mzc3OTgwMiBDLTAuMzE3NTY0MzU2LDUuMDY0NjY5MzEgMS4wNTAzOTYwNCwzLjk2NDcyODcxIDEuNzA0NDM1NjQsNC41ODg5ODYxNCBMMS43MDQ0NTU0NSw0LjU4ODkxMDg5IFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUgNSkiLz4KICA8L2c+Cjwvc3ZnPgo=");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+ul.star > li::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGQ0QzNEQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLXN0YXIiPgogIDxwb2x5Z29uIHBvaW50cz0iMTIgMiAxNS4wOSA4LjI2IDIyIDkuMjcgMTcgMTQuMTQgMTguMTggMjEuMDIgMTIgMTcuNzcgNS44MiAyMS4wMiA3IDE0LjE0IDIgOS4yNyA4LjkxIDguMjYgMTIgMiI+PC9wb2x5Z29uPgo8L3N2Zz4=");
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+ol > li {
+  list-style-type: none;
+  margin-left: 2rem;
+  position: relative;
+  counter-increment: step-counter;
+  padding-bottom: 1rem;
+}
+
+ol > li::before {
+  content: counter(step-counter);
+  margin-right: 1em;
+  line-height: 1;
+  background-color: rgb(255, 0, 100);
+  box-shadow: 0.2em 0.2em 0 rgba(128, 128, 128, 0.2);
+  color: white;
+  font-weight: 600;
+  padding: 2px 0;
+  width: 2.7em;
+  height: 1.2em;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: -62px;
+  margin-top: -3px;
+  top: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  font-style: normal;
+  font-family: sharp-sans, sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
+}
+
+ol.text-white > li::before {
+  background-color: white;
+  box-shadow: 0.2em 0.2em 0 rgba(166, 166, 166, 0.6);
+  color: rgb(255, 0, 100);
+}
+
+ol > li:nth-of-type(2n + 1)::before {
+  transform: rotate(4deg);
+}
+
+a {
+  text-decoration: none;
+  box-shadow: none;
+  font-weight: 600;
+  background-image: linear-gradient(
+    180deg,
+    transparent 70%,
+    rgba(255, 0, 115, 0.2) 0
+  );
+  transition: box-shadow 0.2s;
+}
+
+a:hover,
+a:focus,
+a:active {
+  background: 0 0;
+  box-shadow: inset 0 -1.3em 0 rgba(255, 0, 115, 0.2);
+}

@@ -1,94 +1,189 @@
-// const GenerateImage = ({ src }) => (
-//   <div className="flex justify-center">
-//     <img
-//       src={src}
-//       className="absolute top-0 filter brightness-[500] md:ml-[66px] md:mt-[-52px]"
-//       alt=""
-//     />
-//     <img src={src} className="relative" alt="" />
-//   </div>
-// );
+const SeparatorTop = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    width="1440"
+    height="560"
+    preserveAspectRatio="none"
+    viewBox="0 0 1440 560"
+    className="absolute"
+    style={{ top: -560, left: "50%", transform: "translateX(-50%)" }}
+  >
+    <g mask='url("#SvgjsMask1027")' fill="none">
+      <path
+        d="M 0,528 C 96,468 288,262.8 480,228 C 672,193.2 768,364.4 960,354 C 1152,343.6 1344,211.6 1440,176L1440 560L0 560z"
+        fill="rgba(255, 0, 115, 1)"
+      ></path>
+    </g>
+    <defs>
+      <mask id="SvgjsMask1027">
+        <rect width="1440" height="560" fill="#ffffff"></rect>
+      </mask>
+    </defs>
+  </svg>
+);
+
+const SeparatorBottom = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    width="1440"
+    height="560"
+    preserveAspectRatio="none"
+    viewBox="0 0 1440 560"
+    className="absolute"
+    style={{
+      bottom: -560,
+      left: "50%",
+      transform: "translateX(-50%) rotate(180deg)",
+    }}
+  >
+    <g mask='url("#SvgjsMask1027")' fill="none">
+      <path
+        d="M 0,528 C 96,468 288,262.8 480,228 C 672,193.2 768,364.4 960,354 C 1152,343.6 1344,211.6 1440,176L1440 560L0 560z"
+        fill="rgba(255, 0, 115, 1)"
+      ></path>
+    </g>
+    <defs>
+      <mask id="SvgjsMask1027">
+        <rect width="1440" height="560" fill="#ffffff"></rect>
+      </mask>
+    </defs>
+  </svg>
+);
 
 export const Pain = () => (
-  <section className="md:pt-[92px] py-[48px] md:pb-[90px] bg-slate-light px-6 md:px-0 font-dm-sans">
+  <section
+    className="px-6 md:px-0 font-dm-sans relative text-white"
+    style={{
+      backgroundColor: "rgb(255, 0, 115)",
+      marginTop: 450,
+      marginBottom: 450,
+    }}
+  >
+    <SeparatorTop />
     <div className="max-w-[790px] mt-[56px] md:mt-20 m-auto">
-      <h2 className="font-medium text-slate-headline text-mobile-h2 lg:text-desktop-h2">
-        How do you even know you aren't breaking things?
+      <h2 className="font-medium text-mobile-h2 lg:text-desktop-h2 font-ibm-sans tracking-tight">
+        How do you know you aren't breaking things?
       </h2>
-      <div className="max-w-default md:justify-center md:flex md:items-start md:m-auto">
+      <div className="w-full md:mt-20">
+        <p className="mt-6 text-mobile-h3 lg:text-desktop-h3 leading-9 font-normal text-white italic quote">
+          Write some tests first!
+        </p>
+        <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+          Yeah, you've heard that. You <em>know</em> tests could help. But
+          still:
+        </p>
+        <ol className="list-decimal mt-6 text-xl leading-9 antialiased font-normal text-white">
+          <li>
+            Adding tests for this would itself require a MAJOR refactoring of
+            the entire codebase!
+          </li>
+          <li>
+            Deadlines are short. Would you really have time for this? You aren't
+            so sure of this…
+          </li>
+          <li>
+            Your team already asked to freeze features for a while, so you can
+            clean up the code. But this isn't happening soon…
+          </li>
+        </ol>
+      </div>
+      <div className="max-w-default md:justify-center md:flex md:items-center mt-12">
         <div className="w-full md:flex md:items-center md:justify-center">
-          <div className="md:mt-12">
-            <p>"Write some tests first!"</p>
-            <p>
-              Yeah, you've heard that. You <em>know</em> tests could help. But
-              still:
+          <div className="md:mr-2">
+            <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+              So you resort to what you know how to do:
             </p>
-            <ul className="list-decimal">
-              <li>
-                Adding tests for this would itself require a MAJOR refactoring
-                of the entire codebase!
-              </li>
-              <li>
-                Deadlines are short. Would you really have time for this? You
-                aren't so sure of this…
-              </li>
-              <li>
-                Your team already asked to freeze features for a while, so you
-                can clean up the code. But this isn't happening soon…
-              </li>
-            </ul>
-            <p>
-              So you resort to what you know how to do: be extra careful, touch
-              the less possible amount of code. Try out some stuff manually.
+            <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+              Touch the less possible amount of code.
+              <br />
+              Try out some stuff manually.
+              <br />
+              Be extra careful.
+              <br />
               Cross fingers.
             </p>
-            <p>
-              "I won't be the one breaking production this time", you think 🤞
-            </p>
+            <p className="mt-6 text-xl leading-9 antialiased font-normal text-white"></p>
           </div>
         </div>
-        <div className="relative w-full mt-12 md:mt-0">
-          <img src="/assets/jenga/1-fail.gif" alt="" />
+        <div className="relative">
+          <div
+            className="absolute w-full h-full bg-white"
+            style={{ top: -15, left: 15, zIndex: 1 }}
+          ></div>
+          <img
+            src="/assets/jenga/1-fail.gif"
+            alt=""
+            className="relative"
+            style={{ zIndex: 2 }}
+          />
         </div>
       </div>
-      <div className="max-w-default md:justify-center md:flex md:items-start md:m-auto pt-12">
-        <div className="relative w-full mt-12 md:mt-0">
-          <img src="/assets/jenga/2-try-and-fail.gif" alt="" />
+
+      <div className="w-full md:mt-12">
+        <p className="mt-6 text-mobile-h3 lg:text-desktop-h3 leading-9 font-normal text-white italic quote">
+          I won't be the one breaking production this time 🤞
+        </p>
+      </div>
+
+      <div className="max-w-default md:justify-center md:flex md:items-center md:m-auto pt-12">
+        <div className="relative md:mr-4">
+          <img
+            src="/assets/jenga/2-try-and-fail.gif"
+            alt=""
+            className="relative"
+            style={{ zIndex: 2 }}
+          />
+          <div
+            className="absolute w-full h-full bg-white"
+            style={{ top: 15, left: -15, zIndex: 1 }}
+          ></div>
         </div>
         <div className="w-full md:flex md:items-center md:justify-center">
-          <div className="md:mt-12">
-            <p>
+          <div className="md:ml-4">
+            <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
               If only! This code is a twisted, tangled spaghetti soup. The last
               time you tried renaming a model attribute, half of the routes
               stopped working! 🤬
             </p>
-            <p>
-              Changing code here is like playing Russian Roulette on a roll. Do
-              you feel lucky today?
+            <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+              Changing code here is like playing Russian Roulette on a roll.
             </p>
-            <p>
-              Let's face it. What this codebase really needs is a good
-              Refactoring Sprint or two. At least, that's what your colleagues
-              say.
-            </p>
-            <p>
-              If you ever experienced that kind of "refactor the codebase"
-              attempt, you may have been left… doubtful.
-            </p>
-            <p>
-              How good are 3,000 lines of code spread across 30 methods where{" "}
-              <code>fooN()</code> just calls <code>fooN+1()</code> in its last
-              line? Great, now you have to jump all around to understand what's
-              going on! So much for "coding new features faster".
-            </p>
-            <p>
-              Other devs say they want to refactor the code all the time. They
-              look confident and all. But after they have touched the code, the
-              result is often worse…
+            <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+              Do you feel lucky today?
             </p>
           </div>
         </div>
       </div>
+
+      <div className="w-full md:mt-12">
+        <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+          Let's face it. What this codebase really needs is a good Refactoring
+          Sprint or two (or three). At least, that's what your colleagues say.
+        </p>
+        <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+          If you ever experienced that kind of "refactor the codebase" attempt,
+          you may have been left… doubtful.
+        </p>
+        <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+          How good are 3,000 lines of code spread across 30 methods where{" "}
+          <code className="border border-white rounded px-1 py-1">fooN()</code>{" "}
+          just calls{" "}
+          <code className="border border-white rounded px-1 py-1">
+            fooN+1()
+          </code>{" "}
+          in its last line? Now you have to jump all around the code to
+          understand what's going on. Great! So much for "coding new features
+          faster".
+        </p>
+        <p className="mt-6 text-xl leading-9 antialiased font-normal text-white">
+          Other devs say they want to refactor the code all the time. They look
+          confident and all. But after they have touched the code, the result is
+          often worse…
+        </p>
+      </div>
     </div>
+    <SeparatorBottom />
   </section>
 );
