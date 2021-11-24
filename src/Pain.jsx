@@ -7,10 +7,10 @@ const SeparatorTop = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
-      width="1440"
+      width={width}
       height="560"
       preserveAspectRatio="none"
-      viewBox="0 0 1440 560"
+      viewBox={`0 0 1440 560`}
       className="absolute"
       style={{ top: -560, left: "50%", transform: "translateX(-50%)" }}
     >
@@ -36,7 +36,7 @@ const SeparatorBottom = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
-      width="1440"
+      width={width}
       height="560"
       preserveAspectRatio="none"
       viewBox="0 0 1440 560"
