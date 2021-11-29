@@ -2,7 +2,7 @@ export function WhoAmI() {
   return (
     <div className="px-6 md:px-0 max-w-[910px] mt-[56px] md:mt-20 m-auto ">
       <div className="md:flex">
-        <div>
+        <div className="mt-0 md:mt-10">
           <img
             src="/assets/profile.jpg"
             alt="Nicolas Carlo"
@@ -33,9 +33,28 @@ export function WhoAmI() {
             </span>
           </p>
           <p className="mt-6 text-xl leading-9 antialiased font-normal">
+            I'm the author of{" "}
+            <a
+              href="https://understandlegacycode.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              understandlegacycode.com
+            </a>{" "}
+            and the{" "}
+            <a
+              href="https://understandlegacycode.com/first-aid-kit"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Legacy Code: First Aid Kit
+            </a>
+            .
+          </p>
+          <p className="mt-6 text-xl leading-9 antialiased font-normal">
             I started my career on the front-end, building jQuery plugins and
             UIs. I progressively included back-end when Node.js became a thing.
-            I've been a freelancer, consultant, and Tech Lead on different
+            I've been a freelancer, consultant, and Tech Lead on very different
             projects. I pushed many styles of SPA to production, from
             Backbone.js to Angular, passing by Cycle.js… These past 4 years have
             mostly been React. 😃
