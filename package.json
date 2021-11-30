@@ -8,7 +8,11 @@
     "type": "git",
     "url": "git+https://github.com/nicoespeon/refactoringjavascript.dev.git"
   },
-  "keywords": [],
+  "keywords": [
+    "refactoring",
+    "legacy code",
+    "coding challenge"
+  ],
   "author": "Nicolas Carlo <nicolascarlo.espeon@gmail.com>",
   "license": "ISC",
   "bugs": {
