@@ -122,6 +122,7 @@ module.exports = function (webpackEnv) {
           // https://github.com/facebook/create-react-app/issues/2677
           ident: "postcss",
           plugins: () => [
+            require("tailwindcss"),
             require("postcss-flexbugs-fixes"),
             require("postcss-preset-env")({
               autoprefixer: {
@@ -389,6 +390,11 @@ module.exports = function (webpackEnv) {
                 limit: imageInlineSizeLimit,
                 name: "static/media/[name].[hash:8].[ext]",
               },
+            },
+            {
+              // Load levels code as string
+              test: /levels\//i,
+              use: "raw-loader",
             },
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
