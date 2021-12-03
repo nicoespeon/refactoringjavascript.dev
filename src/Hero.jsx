@@ -132,9 +132,9 @@ export function Hero() {
               this code is doing.
             </p>
             <p className="mt-6 text-xl leading-9 antialiased font-normal text-slate-body">
-              Other developers wrote that. Most don't work here anymore. The
-              rest can't remember what <em>this part</em> was supposed to do 🤷‍♂️{" "}
-              You are facing the beast and it's a scary one:
+              Other developers wrote that code. Most don't work here anymore.
+              The rest can't remember what <em>this part</em> was supposed to
+              do 🤷‍♂️ You are facing the beast and it's a scary one:
             </p>
           </div>
           <img className="" src="/assets/legacy-code.png" alt="" />
