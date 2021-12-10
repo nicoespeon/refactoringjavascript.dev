@@ -128,20 +128,20 @@ export default function App() {
     setExerciseId(window.location.hash.replace("#", ""));
   }, []);
 
-  useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
-      Object.keys(idsToExercises).forEach((id) =>
-        console.log(idsToExercises[id].name, window.location.origin + `#${id}`)
-      );
-    }
-  }, []);
+  const [showLinks, setShowLinks] = useState(false);
 
   const exercise = idsToExercises[exerciceId] ?? defaultExercise;
 
   return (
     <div className={theme === "dark" ? "App" : "App light"}>
       <div className="App__Header">
-        <h1>
+        <h1
+          onClick={() => {
+            if (process.env.NODE_ENV === "development") {
+              setShowLinks(!showLinks);
+            }
+          }}
+        >
           <span>Refactoring JavaScript</span>
           <br />
           Playground
@@ -179,7 +179,25 @@ export default function App() {
         </button>
       </div>
 
-      <Playground exercise={exercise} theme={theme} />
+      {showLinks ? (
+        Object.keys(idsToExercises).map((id) => (
+          <a
+            href={window.location.origin + window.location.pathname + `#${id}`}
+            onClick={(event) => {
+              event.preventDefault();
+
+              // Force the page reload
+              window.location =
+                window.location.origin + window.location.pathname + `#${id}`;
+              window.location.reload();
+            }}
+          >
+            {idsToExercises[id].name}
+          </a>
+        ))
+      ) : (
+        <Playground exercise={exercise} theme={theme} />
+      )}
     </div>
   );
 }
