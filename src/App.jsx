@@ -15,7 +15,7 @@ const TopLeft = () => {
 
   return (
     <svg
-      className="absolute left-0"
+      className="absolute left-0 max-w-full"
       style={{
         top: -10,
         left: -50,
